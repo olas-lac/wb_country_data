@@ -60,7 +60,7 @@ basic_demo_table<-filter(final_table, year == 2020)
 country_stats_table<-unique(merge(basic_demo_table, countries))
 
 
-population_proj<-select(final_table, country, iso3, year, ,pop_total,  pop_rural, pop_urban )
+population_proj<-select(final_table, country, iso3, year ,pop_total,  pop_rural, pop_urban )
 
 
 write.csv(population_proj, "population_projections.csv")
